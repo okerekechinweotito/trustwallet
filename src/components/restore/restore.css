@@ -1,0 +1,87 @@
+.restore__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  padding: 1em;
+}
+
+.restore__content--logo {
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../home/assets/horizontal_white-removebg-preview.png");
+  width: 100%;
+  height: 5em;
+  margin-bottom: 3em;
+  background-color: #3375bb;
+}
+
+.restore__content__password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.restore__content__password h3 {
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 0;
+}
+
+.restore__content__password--mnemonic {
+  padding: 1em;
+  background-color: #3375bb;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.restore__content__password input {
+  margin: 0.7em 0 0 0;
+  padding: 0.7em 0 0.7em 0.7em;
+  width: 95%;
+  outline: hidden;
+}
+
+.restore__content__password i {
+  display: block;
+  margin-top: 0.5em;
+  color: #989898;
+}
+
+.restore__content__password button {
+  padding: 1em 2em;
+  background-color: #3375bb;
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  margin-top: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.restore__content__password h4 {
+  font-weight: 600;
+  color: #989898;
+}
+
+@media screen and (min-width: 765px) {
+  .restore__content {
+    width: 60%;
+    height: 90vh;
+    margin: auto;
+  }
+  .restore__content__password input {
+    width: 98%;
+  }
+}
+/*# sourceMappingURL=restore.css.map */

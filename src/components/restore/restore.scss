@@ -1,0 +1,77 @@
+$backgroundColor: #3375bb;
+$white: #ffffff;
+$inputColor: #989898;
+
+.restore__content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1em;
+
+  &--logo {
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../home/assets/horizontal_white-removebg-preview.png");
+    width: 100%;
+    height: 5em;
+    margin-bottom: 3em;
+    background-color: $backgroundColor;
+  }
+
+  &__password {
+    display: flex;
+    flex-direction: column;
+    h3 {
+      font-weight: 600;
+      font-size: 1.5em;
+      line-height: 0;
+    }
+    &--mnemonic {
+      padding: 1em;
+      background-color: $backgroundColor;
+      color: $white;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    input {
+      margin: 0.7em 0 0 0;
+      padding: 0.7em 0 0.7em 0.7em;
+      width: 95%;
+      outline: hidden;
+    }
+    i {
+      display: block;
+      margin-top: 0.5em;
+      color: $inputColor;
+    }
+    button {
+      padding: 1em 2em;
+      background-color: $backgroundColor;
+      color: $white;
+      border: none;
+      font-weight: bold;
+      margin-top: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    h4 {
+      font-weight: 600;
+      color: $inputColor;
+    }
+  }
+}
+
+@media screen and (min-width: 765px) {
+  .restore__content {
+    width: 60%;
+    height: 90vh;
+    margin: auto;
+  }
+  .restore__content__password {
+    input {
+      width: 98%;
+    }
+  }
+}
